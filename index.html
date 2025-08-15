@@ -1,45 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
+    <title>Frontend Mentor | Four card feature section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --Red: var(#ea5353);
+        --Cyan: var(#45d3d3);
+        --Orange: var(#fcaf4a);
+        --Blue: var(#549ef2);
+        --Grey500: var(#4c4e61);
+        --Grey400: var(hsl(212, 6%, 44%));
+        --White: var(hsl(0, 0%, 100%));
+      }
+    </style>
+  </head>
+  <body
+    style="font-family: 'Poppins'"
+    ;
+    class="bg-[#fafafa] min-h-screen md:min-h-[700px] flex flex-col justify-center items-center"
+  >
+    <div
+      class="flex flex-col h-auto justify-center items-center mb-4 mt-10 md:mt-0"
+    >
+      <!-- 200, 400 , 600 weights. -->
+      <p class="font-light text-lg text-center md:text-2xl">
+        Reliable, efficient delivery
+      </p>
+      <p class="font-bold text-lg text-center md:text-2xl">
+        Powered by Technology
+      </p>
+      <p class="text-sm text-center py-6 md:px-150">
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </div>
+    <!-- for resposiveness -->
+    <div
+      class="flex flex-col h-auto justify-center items-center gap-8 md:flex-row"
+    >
+      <!-- Blue Card -->
+      <div
+        class="flex flex-col gap-2 bg-[#ffffff] shadow-[0px_2px_10px_#4c4e61] px-6 py-8 md:w-[350px] w-[85%] h-auto border-t-4 border-[#45d3d3]"
+      >
+        <p class="font-semibold text-xl">Supervisor</p>
+        <p class="text-sm text-[#4c4e61]">
+          Monitors activity to identify project roadblocks
+        </p>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+        <img src="/images/icon-supervisor.svg" class="ml-auto" alt="" />
+      </div>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+      <div class="flex flex-col justify-center items-center gap-8">
+        <div
+          class="flex flex-col gap-2 bg-[#ffffff] shadow-[0px_2px_10px_#4c4e61] px-6 py-8 md:w-[350px] w-[85%] h-auto border-t-4 border-[#ea5353]"
+        >
+          <p class="font-semibold text-xl">Team Builder</p>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+          <p class="text-sm text-[#4c4e61]">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img src="/images/icon-team-builder.svg" class="ml-auto" alt="" />
+        </div>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
+        <div
+          class="flex flex-col gap-2 bg-[#ffffff] shadow-[0px_2px_10px_#4c4e61] px-6 py-8 md:w-[350px] w-[85%] h-auto border-t-4 border-[#fcaf4a]"
+        >
+          <p class="font-semibold text-xl">Karma</p>
+          <p class="text-sm text-[#4c4e61]">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img src="/images/icon-karma.svg" class="ml-auto" alt="" />
+        </div>
+      </div>
 
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+      <div
+        class="flex flex-col gap-2 bg-[#ffffff] shadow-[0px_2px_10px_#4c4e61] px-6 py-8 md:w-[350px] w-[85%] h-auto border-t-4 border-[#549ef2]"
+      >
+        <p class="font-semibold text-xl">Calculator</p>
 
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+        <p class="text-sm text-[#4c4e61]">
+          Uses data from past projects to provide better delivery estimates
+        </p>
+
+        <img src="/images/icon-calculator.svg" class="ml-auto" alt="" />
+      </div>
+    </div>
+  </body>
 </html>
