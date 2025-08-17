@@ -2,6 +2,12 @@
 
 ---
 
+## Responsive Design:
+
+## ![Mobile View](/images/responsive_design.png)
+
+---
+
 ## Overview
 
 This is my solution to the [Frontend Mentor Four Card Feature Section challenge](#).  
@@ -31,6 +37,7 @@ The goal was to build a responsive four-card layout using a **mobile-first appro
 
 ## What I Learned
 
-- Using **Tailwind’s arbitrary values** for precise bottom-only shadows:  
+- Using **Tailwind’s arbitrary values** for precise bottom-only shadows:
   ```html
   shadow-[0px_2px_10px_#4c4e61]
+  ```
